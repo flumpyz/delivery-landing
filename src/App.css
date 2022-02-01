@@ -1,10 +1,83 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Raleway:wght@300&display=swap');
+
+.home-page {
+  margin: 0 auto;
+  height: 718px;
+  background: radial-gradient(#376A9A, #2B5276);
+
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%; /* Opera 9.6+ */
+  background-size: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header, .slider {
+  margin-right: 135px;
+  margin-left: 135px;
+}
+
+.header {
+  height: 106px;
+}
+
+.logo {
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+
+  font-family: 'Raleway', sans-serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__logo-sign {
+  margin-right: 4px;
+}
+
+.company-name {
+  margin-left: 30px;
+  width: 300px;
+}
+
+.company-name__title {
+  color: #A9C5E0;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.vertical-line {
+  margin-left: 50px;
+  height: 14px;
+  border-left: 1px solid #A9C5E0;
+}
+
+.contact-number {
+  display: flex;
+  margin-left: 300px;
+  color: #A9C5E0;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.contact-number__icon {
+  margin-right: 12px;
+}
+
+.login {
+  width: 170px;
+  margin-left: 76px;
+}
+
+.login__button {
+  width: 170px;
+  height: 52px;
+  border-radius: 10%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +108,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/ProximaNova/proximanova_light.otf") format("truetype");
+  font-style: normal;
+  font-weight: 100;
 }
