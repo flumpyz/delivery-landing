@@ -1,6 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Raleway:wght@300&display=swap');
 
-.home-page {
+@font-face {
+  font-family: "Proxima Nova Light";
+  src: url("fonts/ProximaNova/ProximaNova-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Regular";
+  src: url("fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Semibold";
+  src: url("fonts/ProximaNova/ProximaNova-Semibold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: url("fonts/ProximaNova/ProximaNova-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Extrabold";
+  src: url("fonts/ProximaNova/ProximaNova-Extrabld.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-container {
+  width: 100%;
+  height: 100%;
+}
+
+.app__home-page {
   margin: 0 auto;
   height: 718px;
   background: radial-gradient(#376A9A, #2B5276);
@@ -11,25 +74,47 @@
   background-size: 100%;
 }
 
-.header, .slider {
+.header__container {
+  width: 1200px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.slider {
   margin-right: 135px;
   margin-left: 135px;
 }
 
 .header {
   height: 106px;
+
+  display: flex;
+  align-items: center;
+
+}
+
+.container {
+  width: 100%;
+
+  margin-top: 27px;
+  margin-bottom: 27px;
+
+  display: flex;
+  align-items: center;
 }
 
 .logo {
   height: 100%;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-
-  font-family: 'Raleway', sans-serif;
-}
 
 .logo {
   display: flex;
@@ -47,6 +132,7 @@
 
 .company-name__title {
   color: #A9C5E0;
+  font-family: "Proxima Nova Light", sans-serif;
   font-size: 13px;
   line-height: 21px;
 }
@@ -61,12 +147,18 @@
   display: flex;
   margin-left: 300px;
   color: #A9C5E0;
+
+  font-family: "Proxima Nova Light", sans-serif;
   font-size: 13px;
+
   line-height: 21px;
 }
 
 .contact-number__icon {
   margin-right: 12px;
+
+  width: 14px;
+  height: 14px;
 }
 
 .login {
@@ -77,28 +169,38 @@
 .login__button {
   width: 170px;
   height: 52px;
-  border-radius: 10%;
+
+  border-radius: 10px;
+
+  outline: none;
+
+  background: rgba(255, 255, 255, 0);
+
+  border: 1px solid #E5E31F;
+
+  font-family: "Proxima Nova Semibold", sans-serif;
+  font-size: 18px;
+  color: #E5E31F;
+
+  transition: color 0.5s ease;
+
+  cursor: pointer;
+}
+
+.login__button:active,
+.login__button:focus {
+  outline: none !important;
+}
+
+.login__button:hover {
+  background-color: #E5E31F;
+  color: #2B5276;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -108,11 +210,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-@font-face {
-  font-family: "Proxima Nova";
-  src: url("fonts/ProximaNova/proximanova_light.otf") format("truetype");
-  font-style: normal;
-  font-weight: 100;
 }

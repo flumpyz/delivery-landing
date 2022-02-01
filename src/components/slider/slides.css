@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "Proxima Nova Light";
+    src: url("../../fonts/ProximaNova/ProximaNova-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova Regular";
+    src: url("../../fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova Semibold";
+    src: url("../../fonts/ProximaNova/ProximaNova-Semibold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova Bold";
+    src: url("../../fonts/ProximaNova/ProximaNova-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova Extrabold";
+    src: url("../../fonts/ProximaNova/ProximaNova-Extrabld.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.car-slide {
+    width: 620px;
+    height: 612px;
+
+    background: url("../../images/car.png") no-repeat bottom left;
+}
+
+.contract-slide {
+    width: 620px;
+    height: 612px;
+
+    background: url("../../images/contract.png") no-repeat bottom left;
+}
+
+.slider-container {
+    display: flex;
+
+    width: 100%;
+    height: 612px;
+
+    background: radial-gradient(#376A9A, #2B5276);;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 570px;
+}
+
+h1 {
+    font-family: "Proxima Nova Extrabold", sans-serif;
+    font-size: 64px;
+    color: white;
+}
+
+p {
+    font-family: "Proxima Nova Regular", sans-serif;
+    font-size: 16px;
+    color: white;
+    line-height: 24px;
+}
+
+.input-container {
+    align-self: flex-end;
+}

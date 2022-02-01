@@ -1,0 +1,31 @@
+@import "../../../theme/fonts/fonts.css";
+@import "../../../theme/colors/colors.css";
+.cardContainer {
+  height: 185px;
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 30px;
+}
+.cardContainer__iconContainer {
+  max-width: 100px;
+  max-height: 100px;
+  display: flex;
+  justify-content: center;
+}
+.cardContainer__title {
+  font-family: "Proxima Nova Semibold", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  color: black;
+}
+.cardContainer__description {
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  color: black;
+  text-align: center;
+}
+/*# sourceMappingURL=style.module.css.map */
