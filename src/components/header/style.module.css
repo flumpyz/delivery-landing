@@ -1,0 +1,76 @@
+.headerContainer {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header {
+  height: 106px;
+  display: flex;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  margin-top: 27px;
+  margin-bottom: 27px;
+  display: flex;
+  align-items: center;
+}
+.companyName {
+  margin-left: 30px;
+  width: 300px;
+}
+.companyName__title {
+  color: #A9C5E0;
+  font-family: "Proxima Nova Light", sans-serif;
+  font-size: 13px;
+  line-height: 21px;
+}
+.verticalLine {
+  margin-left: 50px;
+  height: 14px;
+  border-left: 1px solid #A9C5E0;
+}
+.contactNumber {
+  display: flex;
+  margin-left: 300px;
+  color: #A9C5E0;
+  font-family: "Proxima Nova Light", sans-serif;
+  font-size: 13px;
+  line-height: 21px;
+}
+.contactNumber__icon {
+  margin-right: 12px;
+  width: 14px;
+  height: 14px;
+}
+.login {
+  width: 170px;
+  margin-left: 76px;
+}
+.login__button {
+  width: 170px;
+  height: 52px;
+  border-radius: 10px;
+  outline: none;
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid #E5E31F;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  font-size: 18px;
+  color: #E5E31F;
+  transition: color 0.5s ease;
+  cursor: pointer;
+}
+.login__button:active,
+.login__button:focus {
+  outline: none !important;
+}
+.login__button:hover {
+  background-color: #E5E31F;
+  color: #2B5276;
+}
+/*# sourceMappingURL=style.module.css.map */

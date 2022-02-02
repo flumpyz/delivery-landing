@@ -11,32 +11,13 @@ import Slider from "./components/slider";
 import CardWrapper from "./components/cardWrapper";
 import Footer from "./components/footer";
 import Logo from "./UIComponents/logo";
+import Header from "./components/header";
 
 function App() {
     return (
         <div className="app">
             <main className="app__home-page">
-                <header className="header">
-                    <div className="container">
-                        <div className="header__container">
-                            <Logo />
-                            <div className="vertical-line">
-                            </div>
-                            <div className="company-name">
-                                <p className="company-name__title">Курьерская служба доставки</p>
-                            </div>
-                            <div className="contact-number">
-                                <img className="contact-number__icon" src={phone_icon} alt=""/>
-                                <p className="contact-number__number">8 (909) 023-12-51</p>
-                            </div>
-                            <div className="login">
-                                <button className="login__button">
-                                    Вход
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </header>
+                <Header />
                 <Slider/>
                 <CardWrapper/>
                 <Footer />
