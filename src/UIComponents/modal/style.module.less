@@ -1,0 +1,133 @@
+.modalWrapper {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.modalWrapper_opened {
+  height: 100%;
+  display: block;
+}
+
+.modalWrapper_closed {
+  height: 0;
+  display: none;
+}
+
+.modalContainer {
+  position: fixed;
+
+  top: 0; left: 0; bottom: 0; right: 0;
+
+  max-width: 560px;
+  height: 470px;
+
+  margin: auto;
+
+  background-color: #FFFFFF;
+  border-radius: 6px;
+}
+
+.closeButtonContainer {
+  display: flex;
+  justify-content: right;
+
+  padding-top: 26px;
+  margin-right: 26px;
+}
+
+.closeButtonContainer__closeButton {
+  width: 34px;
+  height: 34px;
+}
+
+.loginContainer {
+  margin-left: 70px;
+  margin-right: 60px;
+}
+
+.loginContainer__title {
+  margin-top: 4px;
+
+  font-family: "Proxima Nova Extrabold", sans-serif;
+  font-size: 38px;
+  line-height: 46px;
+  color: #000000;
+}
+
+.loginContainer__description {
+  margin-top: 18px;
+
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.loginFormContainer {
+  margin-top: 48px;
+}
+
+.loginFormContainer__input {
+  width: 398px;
+  height: 48px;
+
+  border: 2px solid #23415E;
+  border-radius: 6px;
+  outline: none;
+
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.loginFormContainer__input_first {
+  margin-bottom: 8px;
+}
+
+.loginFormContainer__input:focus,
+.loginFormContainer__input:active {
+  outline: none;
+}
+
+.loginFormContainer__submit {
+  width: 430px;
+  height: 52px;
+
+  margin-top: 50px;
+
+  background-color: #E5E31F;
+
+  border: none;
+  border-radius: 10px;
+
+  outline: none;
+
+  font-family: "Proxima Nova Semibold", sans-serif;
+  font-size: 18px;
+  color: #2A4F71;
+
+  transition: color 0.5s ease;
+
+  cursor: pointer;
+}
+
+.loginFormContainer__submit:active,
+.loginFormContainer__submit:focus {
+  outline: none !important;
+}
+
+.loginFormContainer__submit:hover {
+  background: rgba(255, 255, 255, 0);
+
+  border: 1px solid #2A4F71;
+}

@@ -12,16 +12,33 @@ import CardWrapper from "./components/cardWrapper";
 import Footer from "./components/footer";
 import Logo from "./UIComponents/logo";
 import Header from "./components/header";
+import Modal from "./UIComponents/modal";
 
 function App() {
+    const [opened, setOpened] = useState(false);
+
+    const setOpenedHandler = (value) => {
+        setOpened(value);
+    };
+
+    const openModal = () => {
+        setOpenedHandler(true);
+    };
+
+    const closeModal = () => {
+        setOpenedHandler(false);
+    };
+
     return (
         <div className="app">
             <main className="app__home-page">
-                <Header />
-                <Slider/>
-                <CardWrapper/>
-                <Footer />
+                <Header onModalOpen={openModal}/>
+                <Slider />
             </main>
+            <CardWrapper />
+            <Footer />
+
+            <Modal isOpened={opened} onModalClose={closeModal}/>
         </div>
     );
 }

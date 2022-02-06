@@ -3,8 +3,9 @@ import cx from 'classnames';
 import s from './style.module.css';
 import Logo from "../../UIComponents/logo";
 import phone_icon from "../../images/phone.svg";
+// import showBackground from "./script";
 
-const Index = () => {
+const Index = (props) => {
     return (
         <header className={cx(s.header)}>
             <div className={cx(s.container)}>
@@ -20,7 +21,7 @@ const Index = () => {
                         <p className={cx(s.contactNumber__number)}>8 (909) 023-12-51</p>
                     </div>
                     <div className={cx(s.login)}>
-                        <button className={cx(s.login__button)}>
+                        <button className={cx(s.login__button)} onClick={props.onModalOpen}>
                             Вход
                         </button>
                     </div>

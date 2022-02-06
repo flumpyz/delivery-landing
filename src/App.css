@@ -63,10 +63,19 @@ h1 {
   height: 100%;
 }
 
+.app {
+  width: 100%;
+  height: 100%;
+}
+
 .app__home-page {
   margin: 0 auto;
-  height: 718px;
+  height: 100%;
+  /*height: 718px;*/
   background: radial-gradient(#376A9A, #2B5276);
+
+  display: flex;
+  flex-direction: column;
 
   -moz-background-size: 100%; /* Firefox 3.6+ */
   -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
