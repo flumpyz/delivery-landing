@@ -3,6 +3,7 @@ import cx from 'classnames';
 import s from './style.module.css';
 
 import ImageIcon from '../../../UIComponents/imageIcon';
+import RemoveButton from "../../../UIComponents/removeButton";
 
 const Index = () => {
     const [text, setText] = useState("");
@@ -24,6 +25,13 @@ const Index = () => {
         })(file);
 
         fileReader.readAsDataURL(file);
+    }
+
+    const removeFile = () => {
+      let fileInput = document.getElementById("fileUpload");
+
+      fileInput.value = null;
+      setImgPreview(null);
     }
 
     return (
@@ -48,7 +56,7 @@ const Index = () => {
                                 className={text.length > 150
                                     ? cx(s.charCountContainer__charCount, s.charCountContainer__charCountOverflow)
                                     : cx(s.charCountContainer__charCount)}>
-                                {text.length}</span>
+                                {" " + text.length}</span>
                             /150
                         </p>
                     </div>
@@ -65,6 +73,9 @@ const Index = () => {
                         }
                         <input className={cx(s.addImageContainer__fileInput)} id={"fileUpload"} type={"file"}
                                accept={".jpg,.png"} onInput={setImgPreviewHandler}/>
+                        { imgPreview !== null &&
+                            <RemoveButton removeFile={removeFile}/>
+                        }
                     </div>
                     <button className={cx(s.contentContainer__submitButton)}>
                         Применить
