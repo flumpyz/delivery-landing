@@ -145,6 +145,9 @@ input[type=file]::-webkit-file-upload-button {
   line-height: 24px;
   color: #000000;
 }
+.addImageContainer__fileInput_hidden {
+  display: none;
+}
 .addImageContainer__imgPreview {
   width: 34px;
   height: 34px;

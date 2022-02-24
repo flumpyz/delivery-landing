@@ -73,7 +73,10 @@ const Index = () => {
                             <img className={cx(s.addImageContainer__imgPreview)} src={imgPreview} alt="">
                             </img>
                         }
-                        <input className={cx(s.addImageContainer__fileInput)} id={"fileUpload"} type={"file"}
+                        <input className={ imgPreview !== null
+                            ? cx(s.addImageContainer__fileInput, s.addImageContainer__fileInput_visible)
+                            : cx(s.addImageContainer__fileInput, s.addImageContainer__fileInput_hidden) }
+                               id={"fileUpload"} type={"file"}
                                accept={".jpg,.png"} onInput={setImgPreviewHandler}/>
                         { imgPreview !== null &&
                             <RemoveButton removeFile={removeFile}/>
