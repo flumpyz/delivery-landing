@@ -51,14 +51,16 @@ const Index = () => {
                                   value={text} onChange={setTextHandler}/>
                     </div>
                     <div className={cx(s.charCountContainer)}>
-                        <p className={cx(s.charCountContainer__chars)}>Символов:
-                            <span
-                                className={text.length > 150
-                                    ? cx(s.charCountContainer__charCount, s.charCountContainer__charCountOverflow)
-                                    : cx(s.charCountContainer__charCount)}>
+                        { text.length > 0 &&
+                            <p className={cx(s.charCountContainer__chars)}>Символов:
+                                <span
+                                    className={text.length > 150
+                                        ? cx(s.charCountContainer__charCount, s.charCountContainer__charCountOverflow)
+                                        : cx(s.charCountContainer__charCount)}>
                                 {" " + text.length}</span>
-                            /150
-                        </p>
+                                /150
+                            </p>
+                        }
                     </div>
                     <div className={cx(s.addImageContainer)}>
                         <label htmlFor={"fileUpload"} className={cx(s.addLabelContainer)}>
